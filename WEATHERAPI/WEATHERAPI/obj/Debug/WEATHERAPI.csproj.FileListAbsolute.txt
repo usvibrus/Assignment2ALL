@@ -1,0 +1,11 @@
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\bin\WEATHERAPI.dll.config
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\bin\WEATHERAPI.dll
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\bin\WEATHERAPI.pdb
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\bin\Newtonsoft.Json.dll
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\bin\Newtonsoft.Json.xml
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\obj\Debug\WEATHERAPI.csprojResolveAssemblyReference.cache
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\obj\Debug\WEATHERAPI.csproj.CoreCompileInputs.cache
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\obj\Debug\WEATHERAPI.dll
+C:\Users\udayb\source\repos\WEATHERAPI\WEATHERAPI\obj\Debug\WEATHERAPI.pdb

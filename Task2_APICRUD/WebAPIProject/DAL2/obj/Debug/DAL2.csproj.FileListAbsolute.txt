@@ -1,0 +1,11 @@
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\bin\Debug\DAL2.dll.config
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\bin\Debug\DAL2.dll
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\bin\Debug\DAL2.pdb
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\bin\Debug\EntityFramework.dll
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\bin\Debug\EntityFramework.xml
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\obj\Debug\DAL2.csprojResolveAssemblyReference.cache
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\obj\Debug\DAL2.csproj.CoreCompileInputs.cache
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\obj\Debug\DAL2.dll
+C:\Users\udayb\source\repos\Task2_APICRUD\WebAPIProject\DAL2\obj\Debug\DAL2.pdb

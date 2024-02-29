@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Test_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Matchwinsoft">
+    <Key>
+      <PropertyRef Name="MatchId" />
+    </Key>
+    <Property Name="MatchId" Type="Int32" Nullable="false" />
+    <Property Name="SeriesId" Type="Int32" Nullable="false" />
+    <Property Name="MatchName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MatchDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Serieswinsoft" Relationship="Self.FK__Matchwins__Serie__719CDDE7" FromRole="Matchwinsoft" ToRole="Serieswinsoft" />
+  </EntityType>
+  <EntityType Name="Serieswinsoft">
+    <Key>
+      <PropertyRef Name="SeriesId" />
+    </Key>
+    <Property Name="SeriesId" Type="Int32" Nullable="false" />
+    <Property Name="SeriesName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Matchwinsofts" Relationship="Self.FK__Matchwins__Serie__719CDDE7" FromRole="Serieswinsoft" ToRole="Matchwinsoft" />
+  </EntityType>
+  <Association Name="FK__Matchwins__Serie__719CDDE7">
+    <End Role="Serieswinsoft" Type="Self.Serieswinsoft" Multiplicity="1" />
+    <End Role="Matchwinsoft" Type="Self.Matchwinsoft" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Serieswinsoft">
+        <PropertyRef Name="SeriesId" />
+      </Principal>
+      <Dependent Role="Matchwinsoft">
+        <PropertyRef Name="SeriesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BCCIEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Matchwinsofts" EntityType="Self.Matchwinsoft" />
+    <EntitySet Name="Serieswinsofts" EntityType="Self.Serieswinsoft" />
+    <AssociationSet Name="FK__Matchwins__Serie__719CDDE7" Association="Self.FK__Matchwins__Serie__719CDDE7">
+      <End Role="Serieswinsoft" EntitySet="Serieswinsofts" />
+      <End Role="Matchwinsoft" EntitySet="Matchwinsofts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

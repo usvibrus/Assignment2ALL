@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BAE62E-588C-4664-8683-24BE64E28079}|WebAPIProject\\WebAPIProject.csproj|c:\\users\\udayb\\downloads\\task2_api-master\\task2_api-master\\webapiproject\\webapiproject\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BAE62E-588C-4664-8683-24BE64E28079}|WebAPIProject\\WebAPIProject.csproj|solutionrelative:webapiproject\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3374678-A57E-4A6B-B098-0679B922E017}|DAL\\DAL.csproj|C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\dal\\empdbentityframeworkmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{B3374678-A57E-4A6B-B098-0679B922E017}|DAL\\DAL.csproj|solutionrelative:dal\\empdbentityframeworkmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BAE62E-588C-4664-8683-24BE64E28079}|WebAPIProject\\WebAPIProject.csproj|C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\webapiproject\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C8BAE62E-588C-4664-8683-24BE64E28079}|WebAPIProject\\WebAPIProject.csproj|solutionrelative:webapiproject\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\WebAPIProject\\Web.config",
+              "RelativeDocumentMoniker": "WebAPIProject\\Web.config",
+              "ToolTip": "C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\WebAPIProject\\Web.config",
+              "RelativeToolTip": "WebAPIProject\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-02-26T19:35:46.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\WebAPIProject\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "WebAPIProject\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\WebAPIProject\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "WebAPIProject\\Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T19:31:41.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpDBEntityFrameworkModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\DAL\\EmpDBEntityFrameworkModel.edmx",
+              "RelativeDocumentMoniker": "DAL\\EmpDBEntityFrameworkModel.edmx",
+              "ToolTip": "C:\\Users\\udayb\\Downloads\\Task2_API-master\\Task2_API-master\\WebAPIProject\\DAL\\EmpDBEntityFrameworkModel.edmx [Diagram1]",
+              "RelativeToolTip": "DAL\\EmpDBEntityFrameworkModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-02-26T19:30:09.254Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

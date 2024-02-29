@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Test_DBModelStoreContainer" CdmEntityContainer="BCCIEntities1">
+    <EntitySetMapping Name="Matchwinsofts">
+      <EntityTypeMapping TypeName="Test_DBModel.Matchwinsoft">
+        <MappingFragment StoreEntitySet="Matchwinsoft">
+          <ScalarProperty Name="MatchId" ColumnName="MatchId" />
+          <ScalarProperty Name="SeriesId" ColumnName="SeriesId" />
+          <ScalarProperty Name="MatchName" ColumnName="MatchName" />
+          <ScalarProperty Name="MatchDate" ColumnName="MatchDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Serieswinsofts">
+      <EntityTypeMapping TypeName="Test_DBModel.Serieswinsoft">
+        <MappingFragment StoreEntitySet="Serieswinsoft">
+          <ScalarProperty Name="SeriesId" ColumnName="SeriesId" />
+          <ScalarProperty Name="SeriesName" ColumnName="SeriesName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Test_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Matchwinsoft">
+          <Key>
+            <PropertyRef Name="MatchId" />
+          </Key>
+          <Property Name="MatchId" Type="int" Nullable="false" />
+          <Property Name="SeriesId" Type="int" Nullable="false" />
+          <Property Name="MatchName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MatchDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Serieswinsoft">
+          <Key>
+            <PropertyRef Name="SeriesId" />
+          </Key>
+          <Property Name="SeriesId" Type="int" Nullable="false" />
+          <Property Name="SeriesName" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Matchwins__Serie__719CDDE7">
+          <End Role="Serieswinsoft" Type="Self.Serieswinsoft" Multiplicity="1" />
+          <End Role="Matchwinsoft" Type="Self.Matchwinsoft" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Serieswinsoft">
+              <PropertyRef Name="SeriesId" />
+            </Principal>
+            <Dependent Role="Matchwinsoft">
+              <PropertyRef Name="SeriesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Test_DBModelStoreContainer">
+          <EntitySet Name="Matchwinsoft" EntityType="Self.Matchwinsoft" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Serieswinsoft" EntityType="Self.Serieswinsoft" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Matchwins__Serie__719CDDE7" Association="Self.FK__Matchwins__Serie__719CDDE7">
+            <End Role="Serieswinsoft" EntitySet="Serieswinsoft" />
+            <End Role="Matchwinsoft" EntitySet="Matchwinsoft" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Test_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Matchwinsoft">
+          <Key>
+            <PropertyRef Name="MatchId" />
+          </Key>
+          <Property Name="MatchId" Type="Int32" Nullable="false" />
+          <Property Name="SeriesId" Type="Int32" Nullable="false" />
+          <Property Name="MatchName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MatchDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Serieswinsoft" Relationship="Self.FK__Matchwins__Serie__719CDDE7" FromRole="Matchwinsoft" ToRole="Serieswinsoft" />
+        </EntityType>
+        <EntityType Name="Serieswinsoft">
+          <Key>
+            <PropertyRef Name="SeriesId" />
+          </Key>
+          <Property Name="SeriesId" Type="Int32" Nullable="false" />
+          <Property Name="SeriesName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Matchwinsofts" Relationship="Self.FK__Matchwins__Serie__719CDDE7" FromRole="Serieswinsoft" ToRole="Matchwinsoft" />
+        </EntityType>
+        <Association Name="FK__Matchwins__Serie__719CDDE7">
+          <End Role="Serieswinsoft" Type="Self.Serieswinsoft" Multiplicity="1" />
+          <End Role="Matchwinsoft" Type="Self.Matchwinsoft" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Serieswinsoft">
+              <PropertyRef Name="SeriesId" />
+            </Principal>
+            <Dependent Role="Matchwinsoft">
+              <PropertyRef Name="SeriesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BCCIEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Matchwinsofts" EntityType="Self.Matchwinsoft" />
+          <EntitySet Name="Serieswinsofts" EntityType="Self.Serieswinsoft" />
+          <AssociationSet Name="FK__Matchwins__Serie__719CDDE7" Association="Self.FK__Matchwins__Serie__719CDDE7">
+            <End Role="Serieswinsoft" EntitySet="Serieswinsofts" />
+            <End Role="Matchwinsoft" EntitySet="Matchwinsofts" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Test_DBModelStoreContainer" CdmEntityContainer="BCCIEntities1">
+          <EntitySetMapping Name="Matchwinsofts">
+            <EntityTypeMapping TypeName="Test_DBModel.Matchwinsoft">
+              <MappingFragment StoreEntitySet="Matchwinsoft">
+                <ScalarProperty Name="MatchId" ColumnName="MatchId" />
+                <ScalarProperty Name="SeriesId" ColumnName="SeriesId" />
+                <ScalarProperty Name="MatchName" ColumnName="MatchName" />
+                <ScalarProperty Name="MatchDate" ColumnName="MatchDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Serieswinsofts">
+            <EntityTypeMapping TypeName="Test_DBModel.Serieswinsoft">
+              <MappingFragment StoreEntitySet="Serieswinsoft">
+                <ScalarProperty Name="SeriesId" ColumnName="SeriesId" />
+                <ScalarProperty Name="SeriesName" ColumnName="SeriesName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
